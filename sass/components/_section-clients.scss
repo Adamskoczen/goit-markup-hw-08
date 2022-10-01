@@ -1,0 +1,37 @@
+.section-clients {
+    &__lists {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__list {
+        border: 1px solid var(--color-social);
+        height: 92px;
+        width: 170px;
+        border-radius: 4px;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus-within {
+            border: 1px solid var(--color-logo);
+            cursor: pointer;
+        }
+    }
+    &__icon {
+        fill: var(--color-social);
+        height: 70px;
+        width: 120px;
+        margin-left: 20px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__list {
+        &:hover, 
+        &:focus-within {
+            border: 1px solid var(--color-logo);
+            cursor: pointer;
+            .section-clients {
+                &__icon {
+                    fill: var(--color-logo);
+                }
+            }
+        }
+    }
+}
