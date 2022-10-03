@@ -71,6 +71,11 @@
     </div>
     <div class="container-header">
       <header class="top-header container">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__svg" width="22" height="15">
+            <use href="./images/icons.svg#menu_24px"></use>
+          </svg>
+        </button>
         <a class="top-header__logo" href="index.html"><span class="span-logo">Web</span>Studio</a>
         <nav class="navigation">
           <ul class="navigation__lists">
@@ -581,6 +586,59 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle--close js-close-menu">
+        <svg class="menu-toggle__svg menu-toggle__svg--close" width="40" height="40">
+          <use href="./images/icons.svg#close_40px"></use>
+        </svg>
+      </button>
+      <nav class="navigation-mobile">
+        <ul class="navigation-mobile__lists">
+          <li class="navigation-mobile__list navigation-mobile__list--padding-bottom">
+            <a class="navigation-mobile__link" href="index.html">Agencja</a>
+          </li>
+          <li class="navigation-mobile__list navigation-mobile__list--padding-bottom">
+            <a class="navigation-mobile__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation-mobile__list">
+            <a class="navigation-mobile__link" href="index.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-container">
+        <ul class="top-header-mobile__lists">
+          <li class="top-header-mobile__list">
+            <a class="top-header-mobile__link" href="tel:+48111111111"> +48 111 111 111</a>
+          </li>
+          <li class="top-header-mobile__list">
+            <a class="top-header-mobile__link top-header-mobile__link--gray" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-media-mobile">
+          <li class="social-media-mobile__list">
+            <a class="social-media-mobile__link social-media-mobile__link--no-p-left" href="#">Instagram</a>
+          </li>
+          <li class="social-media-mobile__list">
+            <a class="social-media-mobile__link" href="#">Twitter</a>
+          </li>
+          <li class="social-media-mobile__list">
+            <a class="social-media-mobile__link" href="#">Facebook</a>
+          </li>
+          <li class="social-media-mobile__list">
+            <a class="social-media-mobile__link social-media-mobile__link--no-b-right" href="#">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
