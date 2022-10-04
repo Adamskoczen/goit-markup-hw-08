@@ -82,12 +82,14 @@
             <li>
               <a class="navigation__link navigation__link--active" href="index.html">Agencja</a>
             </li>
-            <li><a class="navigation__link" href="portfolio.html">Portfolio</a></li>
+            <li>
+              <a class="navigation__link navigation__link" href="portfolio.html">Portfolio</a>
+            </li>
             <li><a class="navigation__link" href="index.html">Kontakt</a></li>
           </ul>
         </nav>
         <ul class="top-header__lists">
-          <li>
+          <li class="top-header__list top-header__list--m-bottom">
             <a class="top-header__link" href="mailto:info@devstudio.com"
               ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#envelope"></use>
@@ -95,7 +97,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="top-header__list">
+          <li class="top-header__list top-header__list--m-right">
             <a class="top-header__link" href="tel:+48111111111"
               ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -118,55 +120,65 @@
       <section class="section-lorem section container">
         <ul class="section-lorem__lists-icons">
           <li class="section-lorem__list-icons">
-            <svg class="section-lorem__icon">
-              <use href="./images/icons.svg#antenna-1" width="70" height="70" x="102" y="25"></use>
-            </svg>
-          </li>
-          <li class="section-lorem__list-icons">
-            <svg class="section-lorem__icon">
-              <use href="./images/icons.svg#clock-1" width="70" height="70" x="101" y="25"></use>
-            </svg>
-          </li>
-          <li class="section-lorem__list-icons">
-            <svg class="section-lorem__icon">
-              <use href="./images/icons.svg#diagram-1" width="70" height="70" x="100" y="33"></use>
-            </svg>
-          </li>
-          <li class="section-lorem__list-icons">
-            <svg class="section-lorem__icon">
-              <use
-                href="./images/icons.svg#astronaut-1"
-                width="70"
-                height="70"
-                x="100"
-                y="30"
-              ></use>
-            </svg>
-          </li>
-        </ul>
-        <ul class="section-lorem__lists-lorem">
-          <li class="section-lorem__list-lorem">
+            <div class="section-lorem__svg">
+              <svg class="section-lorem__icon">
+                <use
+                  href="./images/icons.svg#antenna-1"
+                  width="70"
+                  height="70"
+                  x="102"
+                  y="25"
+                ></use>
+              </svg>
+            </div>
             <h3 class="section-lorem__title">LOREM IPSUM</h3>
             <p class="section-lorem__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="section-lorem__list-lorem">
+          <li class="section-lorem__list-icons">
+            <div class="section-lorem__svg">
+              <svg class="section-lorem__icon">
+                <use href="./images/icons.svg#clock-1" width="70" height="70" x="101" y="25"></use>
+              </svg>
+            </div>
             <h3 class="section-lorem__title">LOREM IPSUM</h3>
             <p class="section-lorem__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="section-lorem__list-lorem">
+          <li class="section-lorem__list-icons">
+            <div class="section-lorem__svg">
+              <svg class="section-lorem__icon">
+                <use
+                  href="./images/icons.svg#diagram-1"
+                  width="70"
+                  height="70"
+                  x="100"
+                  y="33"
+                ></use>
+              </svg>
+            </div>
             <h3 class="section-lorem__title">LOREM IPSUM</h3>
             <p class="section-lorem__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="section-lorem__list-lorem">
+          <li class="section-lorem__list-icons">
+            <div class="section-lorem__svg">
+              <svg class="section-lorem__icon">
+                <use
+                  href="./images/icons.svg#astronaut-1"
+                  width="70"
+                  height="70"
+                  x="100"
+                  y="30"
+                ></use>
+              </svg>
+            </div>
             <h3 class="section-lorem__title">LOREM IPSUM</h3>
             <p class="section-lorem__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -611,14 +623,19 @@
             <a class="top-header-mobile__link" href="tel:+48111111111"> +48 111 111 111</a>
           </li>
           <li class="top-header-mobile__list">
-            <a class="top-header-mobile__link top-header-mobile__link--gray" href="mailto:info@devstudio.com">
+            <a
+              class="top-header-mobile__link top-header-mobile__link--gray"
+              href="mailto:info@devstudio.com"
+            >
               info@devstudio.com</a
             >
           </li>
         </ul>
         <ul class="social-media-mobile">
           <li class="social-media-mobile__list">
-            <a class="social-media-mobile__link social-media-mobile__link--no-p-left" href="#">Instagram</a>
+            <a class="social-media-mobile__link social-media-mobile__link--no-p-left" href="#"
+              >Instagram</a
+            >
           </li>
           <li class="social-media-mobile__list">
             <a class="social-media-mobile__link" href="#">Twitter</a>
@@ -627,7 +644,9 @@
             <a class="social-media-mobile__link" href="#">Facebook</a>
           </li>
           <li class="social-media-mobile__list">
-            <a class="social-media-mobile__link social-media-mobile__link--no-b-right" href="#">Linkedin</a>
+            <a class="social-media-mobile__link social-media-mobile__link--no-b-right" href="#"
+              >Linkedin</a
+            >
           </li>
         </ul>
       </div>

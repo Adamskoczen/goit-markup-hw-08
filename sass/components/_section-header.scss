@@ -1,10 +1,12 @@
 .background-img {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     background-image: linear-gradient(var(--color-header-gadient),
             var(--color-header-gadient)),
         url("../images/img-header.jpg");
     height: 600px;
+    background-position: center;
+    background-size: auto;
 }
 
 .section-header {
@@ -52,3 +54,37 @@
         }
     }
 }
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .background-img {
+        height: 400px;
+    }
+    .section-header {
+        .container {
+            max-width: 768px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+        &__title {
+            font-size: 26px;
+            padding: 0 200px 30px;
+            line-height: 1.615;
+        }
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .section-header {
+        .container {
+            max-width: 468px;
+        }
+        &__title {
+            padding: 0 50px 30px;
+        }
+    }
+}
+

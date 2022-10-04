@@ -66,6 +66,7 @@
         letter-spacing: 0.03em;
         margin-top: 0;
         margin-bottom: 12px;
+        text-align: center;
     }
     &__label {
         position: relative;
@@ -176,4 +177,28 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
+}
+
+// TABLET & MOBILE
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+        &__input {
+            width: 370px;
+        }
+        &__textarea {
+            width: 370px;
+        }
+        &__check {
+            font-size: 12px;
+        }
+        &__input-checkbox {
+            top: 1px;
+        }
+        &__title {
+            line-height: 1.5;
+        }
+    }
 }
