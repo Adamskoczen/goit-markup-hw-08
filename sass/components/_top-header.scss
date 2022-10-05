@@ -82,7 +82,6 @@
         }
         &__lists {
             flex-direction: column;
-            // align-items: end;
             font-size: 12px;
             margin-right: 15px;
             flex-grow: 0;
@@ -117,7 +116,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 479px;
+        width: 480px;
     }
     .top-header {
         &__logo {
@@ -191,12 +190,6 @@
 .menu-container.is-open {
     transform: translateX(0);
 }
-
-// .mobile-container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: end;
-// }
 
 .navigation-mobile {
     &__list {

@@ -35,3 +35,49 @@
         }
     }
 }
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .section-clients {
+        width: 768px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__title {
+        margin-bottom: 30px;
+        }
+        &__lists {
+        flex-wrap: wrap;
+        }
+        &__list {
+            width: 226px;
+            margin-bottom: 30px;
+            &--m-bottom,
+            &--m-bottom-last {
+                margin-bottom: 0;
+            }
+        }
+        &__icon {
+            position: relative;
+            left: 23px;
+        }
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .section-clients {
+        width: 480px;
+        &__list {
+            width: 210px;
+            &--m-bottom-last {
+                margin-bottom: 30px;
+            }
+        }
+        &__icon {
+            position: relative;
+            left: 16px;
+        }
+    }
+}

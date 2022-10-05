@@ -142,3 +142,70 @@
         top: 4px;
     }
 }
+
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        & .container {
+            max-width: 768px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+    }
+    .footer-info {
+        text-align: center;
+        &__address {
+            margin-bottom: 8px;
+        }
+        &__list {
+            &--margin-bottom {
+                margin-bottom: 8px;
+            }
+            &--margin-bottom-last {
+                margin-bottom: 60px;
+            }
+        }
+    }
+    .socials {
+        padding-top: 5px;
+    }
+    .newsletter {
+        padding-top: 0;
+        text-align: center;
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+        &__input {
+            width: 450px;
+        }
+        &__button {
+            margin: 20px auto 0;
+        }
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .footer {
+        & .container {
+            max-width: 480px;
+        }
+    }
+    .socials {
+        margin: 0 auto 60px;
+        width: 480px;
+        text-align: center;
+        &__lists {
+            display: flex;
+            justify-content: center
+        }
+    }
+    .newsletter {
+        margin: 0 auto ;
+    }
+}

@@ -67,3 +67,40 @@
         margin: 4px 0 20px 0;
     }
 }
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .section-grid {
+        width: 768px;
+        padding-bottom: 60px;
+        &__lists {
+            justify-content: start;
+        }
+        &__list {
+            width: 354px;
+            margin-left: 15px;
+            &--m-right {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .section-grid {
+        width: 480px;
+        &__lists {
+            justify-content: center;
+        }
+        &__list {
+            width: 354px;
+            margin-left: 0;
+            &--m-right {
+                margin-right: 0;
+            }
+        }
+    }
+}

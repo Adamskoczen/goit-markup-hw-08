@@ -30,3 +30,35 @@
         }
     }
 }
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .section-filter {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        max-width: 768px;
+    }
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .section-filter {
+        max-width: 768px;
+        padding-bottom: 30px;
+        &__lists {
+            flex-wrap: wrap;
+            justify-content: start;
+            padding-left: 15px;
+        }
+        &__list {
+            &--margin-top {
+                margin-top: 15px;
+            }
+        }
+        &__btn {
+            padding: 6px 30px;
+        }
+    }
+}
