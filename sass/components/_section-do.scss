@@ -26,3 +26,11 @@
         letter-spacing: 0.03em;
     }
 }
+
+// TABLET & MOBILE
+
+@media screen and (max-width: 1200px) {
+    .section-do {
+        display: none;
+    }
+}

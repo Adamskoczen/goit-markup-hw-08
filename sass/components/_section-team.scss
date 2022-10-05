@@ -50,3 +50,27 @@
         }
     }
 }
+
+// TABLET
+
+@media screen and (max-width: 1200px) {
+    .section__title {
+        margin-bottom: 30px;
+    }
+    .section-team {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__img {
+            width: 354px;
+            height: 374px;
+        }
+    }
+
+
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+
+}

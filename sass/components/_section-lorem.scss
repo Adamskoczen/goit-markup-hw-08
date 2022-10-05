@@ -25,9 +25,11 @@
         line-height: 1.172;
         text-transform: uppercase;
         margin-top: 0;
+        margin-bottom: 10px;
     }
     &__paragraph {
         line-height: 1.714;
+        margin-top: 0;
         margin-bottom: 0;
     }
 }
@@ -37,6 +39,8 @@
 @media screen and (max-width: 1200px) {
     .section-lorem {
         max-width: 768px;
+        padding-top: 60px;
+        padding-bottom: 45px;
         &__lists-icons {
             flex-wrap: wrap;
         }
@@ -48,6 +52,10 @@
         }
         &__paragraph {
             margin-bottom: 30px;
+            &--m-bottom,
+            &--m-bottom-last {
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -68,6 +76,11 @@
         }
         &__title {
             text-align: center;
+        }
+        &__paragraph {
+            &--m-bottom-last {
+                margin-bottom: 30px;
+            }
         }
     }
 }
