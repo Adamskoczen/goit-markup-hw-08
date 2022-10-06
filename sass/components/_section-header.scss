@@ -60,6 +60,10 @@
 @media screen and (max-width: 1200px) {
     .background-img {
         height: 400px;
+        background-image: linear-gradient(var(--color-header-gadient),
+            var(--color-header-gadient)),
+            url("../images/img-header@2x.jpg");
+            background-size: cover;
     }
     .section-header {
         .container {

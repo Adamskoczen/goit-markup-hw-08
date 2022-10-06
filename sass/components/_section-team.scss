@@ -2,7 +2,7 @@
     background-color: var(--color-bg-section);
     &__lists {
         display: flex;
-        justify-content: space-around;
+        gap: 30px;
         padding-left: 0;
     }
     &__list {
@@ -63,21 +63,11 @@
         & .container {
             width: 768px;
         }
-        &__img {
-            width: 354px;
-            height: 374px;
-        }
         &__lists {
             flex-wrap: wrap;
         }
         &__list {
             width: 354px;
-            height: 536px;
-            margin-bottom: 30px;
-            &--m-bottom,
-            &--m-bottom-last {
-                margin-bottom: 0;
-            }
         }
     }
 
@@ -97,10 +87,6 @@
 
         &__list {
             width: 450px;
-            height: 622px;
-            &--m-bottom-last {
-                margin-bottom: 30px;
-            }
         }
     }
 }

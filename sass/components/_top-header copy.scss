@@ -4,19 +4,26 @@
 
 .top-header {
     display: flex;
-    height: 60px;
+    height: 80px;
     align-items: center;
-    & .container {
-            width: 480px;
-        }
     &__logo {
-        position: absolute;
-        left: 15px;
         color: var(--color-black);
-        padding-left: 0;
+        padding-left: 15px;
     }
     &__lists {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 2;
+        list-style-type: none;
+        align-items: center;
+    }
+    &__list {
+        padding: 0 27px 0 50px;
+    }
+    &__icon {
+        position: relative;
+        top: 5px;
+        right: 7px;
     }
     &__link {
         color: var(--color-contact);
@@ -36,7 +43,6 @@
 }
 
 .navigation {
-    display: none;
     flex-grow: 1;
     &__lists {
         display: flex;
@@ -68,27 +74,22 @@
 
 // TABLET
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
     .top-header {
         width: 768px;
-        height: 80px;
         &__logo {
             font-size: 24px;
-            position: static;
-            padding-left: 15px;
         }
         &__lists {
-            display: flex;
             flex-direction: column;
             font-size: 12px;
             margin-right: 15px;
             flex-grow: 0;
-            list-style-type: none;
-            align-items: center;
         }
         &__list {
             padding: 0;
             text-align: left;
+            flex-grow: 1;
             &--m-bottom {
                 margin-bottom: 8px;
             }
@@ -104,59 +105,35 @@
         }
     }
     .navigation {
-        display: block;
-        &__link {
+        &__link{
             margin: 0;
             padding: 0;
         }
     }
-        .menu-toggle {
+}
+
+// MOBILE
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 480px;
+    }
+    .top-header {
+        &__logo {
+            position: absolute;
+            left: 15px;
+            padding-left: 0;
+        }
+        &__lists {
+            display: none;
+        }
+    }
+    .navigation {
         display: none;
     }
 }
 
-// DESKTOP
-
-@media screen and (min-width: 1200px) {
-    .top-header {
-        width: 1200px;
-        &__logo {
-            font-size: 26px;
-        }
-        &__lists {
-            justify-content: flex-end;
-            flex-direction: row;
-            flex-grow: 2;
-        }
-
-        &__list {
-        padding: 0 27px 0 50px;
-        text-align: right;
-        font-size: 14px;
-            &--m-bottom {
-                margin-bottom: 0;
-            }
-            &--m-right {
-                margin-right: 0;
-            }
-        }
-
-        &__icon {
-            position: relative;
-            top: 5px;
-            right: 7px;
-            width: 20px;
-            height: 20px;
-        }
-    }
-
-    .navigation {
-        &__lists {
-            display: flex;
-            flex-grow: 2;
-        }
-    }
-
+@media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
