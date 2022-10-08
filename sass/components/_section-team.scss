@@ -1,13 +1,16 @@
 .section-team {
     background-color: var(--color-bg-section);
     & .container {
-        width: 480px;
+        min-width: 320px;
+        max-width: 480px;
     }
     &__lists {
         display: flex;
         gap: 30px;
         padding-left: 0;
         flex-wrap: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     &__list {
         background-color: var(--color-white);
@@ -60,7 +63,7 @@
 @media screen and (min-width: 768px) {
     .section-team {
         & .container {
-            width: 768px;
+            min-width: 768px;
         }
         &__list {
             width: 354px;
@@ -78,7 +81,8 @@
         padding-bottom: 94px;
 
         & .container {
-            width: 1200px;
+            min-width: 1200px;
+            margin: auto;
         }
         &__lists {
             flex-wrap: nowrap;

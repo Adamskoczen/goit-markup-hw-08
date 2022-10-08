@@ -1,10 +1,13 @@
 .section-clients {
-    width: 480px;
+    min-width: 320px;
+    max-width: 480px;
     &__lists {
         padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 30px;
         flex-wrap: wrap;
+        min-width: 290px;
     }
     &__list {
         position: relative;
@@ -13,11 +16,6 @@
         width: 210px;
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        margin-bottom: 30px;
-            &--m-bottom,
-            &--m-bottom-last {
-                margin-bottom: 0;
-            }
         &:hover, &:focus-within {
             border: 1px solid var(--color-logo);
             cursor: pointer;
@@ -51,17 +49,14 @@
 
 @media screen and (min-width: 768px) {
     .section-clients {
-        width: 768px;
+        min-width: 758px;
+        max-width: 1200px;
+        // width: 100%;
         &__title {
         margin-bottom: 30px;
         }
         &__list {
             width: 226px;
-            margin-bottom: 30px;
-            &--m-bottom,
-            &--m-bottom-last {
-                margin-bottom: 0;
-            }
         }
         &__icon {
             left: 23px;
@@ -80,7 +75,7 @@
             flex-wrap: nowrap;
         }
         &__list {
-            width: 170px;
+            min-width: 170px;
             margin-bottom: 0;
         }
         &__icon {

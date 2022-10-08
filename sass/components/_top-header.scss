@@ -190,6 +190,7 @@
 }
 
 .menu-container {
+    // display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -207,6 +208,7 @@
 }
 
 .menu-container.is-open {
+    display: flex;
     transform: translateX(0);
 }
 
@@ -247,6 +249,7 @@
 
 .social-media-mobile {
     display: flex;
+    flex-wrap: wrap;
     &__lists {
         display: flex;
         flex-direction: column;

@@ -13,7 +13,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--color-white);
-    height: 609px;
+    width: 528px;
+    height: 581px;
     z-index: 2;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -61,7 +62,7 @@
     &__title {
         color: var(--color-main);
         font-size: 20px;
-        line-height: 1.5;
+        line-height: 1.172;
         letter-spacing: 0.03em;
         margin-top: 0;
         margin-bottom: 12px;
@@ -99,8 +100,7 @@
     &__input {
         margin-top: 0;
         margin-bottom: 10px;
-        min-width: 210px;
-        max-width: 370px;
+        width: 448px;
         height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -113,8 +113,7 @@
         }
     }
     &__textarea {
-        min-width: 210px;
-        max-width: 370px;
+        width: 448px;
         height: 120px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -136,7 +135,7 @@
     }
     &__input-checkbox {
         position: absolute;
-        top: 1px;
+        top: 4px;
         left: -23px;
         cursor: pointer;
         display: block;
@@ -151,7 +150,7 @@
         }
     }
     &__check {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.714;
         letter-spacing: 0.03em;
         margin-bottom: 30px;
@@ -182,24 +181,24 @@
 
 // TABLET & MOBILE
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .modal {
-        width: 528px;
-        height: 581px;
+        width: 450px;
+        height: 609px;
         &__input {
-            width: 448px;
+            width: 370px;
         }
         &__textarea {
-            width: 448px;
+            width: 370px;
         }
         &__check {
-            font-size: 14px;
+            font-size: 12px;
         }
         &__input-checkbox {
-            top: 4px;
+            top: 1px;
         }
         &__title {
-            line-height: 1.172;
+            line-height: 1.5;
         }
     }
 }

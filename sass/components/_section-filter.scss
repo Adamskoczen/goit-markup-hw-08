@@ -1,19 +1,14 @@
 .section-filter {
     padding-bottom: 40px;
+    min-width: 320px;
     max-width: 480px;
     &__lists {
         display: flex;
         flex-wrap: wrap;
         justify-content: start;
         padding-left: 15px;
-    }
-    &__list {
-        &--margin-right {
-            margin-right: 8px;
-        }
-        &--margin-top {
-            margin-top: 15px;
-        }
+        row-gap:8px;
+        column-gap: 15px;
     }
     &__btn {
         font-family: "roboto";
