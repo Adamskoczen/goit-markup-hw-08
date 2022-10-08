@@ -25,15 +25,23 @@ img {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__title {
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.171;
-        margin: 0 0 50px;
+        margin: 0 0 30px;
         letter-spacing: 0.03em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        &__title {
+            margin: 0 0 50px;
+        }
     }
 }
 

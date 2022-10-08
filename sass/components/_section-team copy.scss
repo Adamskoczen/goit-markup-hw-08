@@ -1,13 +1,9 @@
 .section-team {
     background-color: var(--color-bg-section);
-    & .container {
-        width: 480px;
-    }
     &__lists {
         display: flex;
         gap: 30px;
         padding-left: 0;
-        flex-wrap: wrap;
     }
     &__list {
         background-color: var(--color-white);
@@ -57,10 +53,18 @@
 
 // TABLET
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .section__title {
+        margin-bottom: 30px;
+    }
     .section-team {
+        padding-top: 60px;
+        padding-bottom: 60px;
         & .container {
             width: 768px;
+        }
+        &__lists {
+            flex-wrap: wrap;
         }
         &__list {
             width: 354px;
@@ -70,19 +74,17 @@
 
 }
 
-// DESKTOP
+// MOBILE
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
     .section-team {
-        padding-top: 94px;
-        padding-bottom: 94px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         & .container {
-            width: 1200px;
+            width: 480px;
         }
-        &__lists {
-            flex-wrap: nowrap;
-        }
+
         &__list {
             width: 450px;
         }

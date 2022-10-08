@@ -1,18 +1,13 @@
 .section-filter {
-    padding-bottom: 40px;
-    max-width: 480px;
+    padding-bottom: 50px;
     &__lists {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        padding-left: 15px;
+        padding-left: 0;
+        justify-content: center;
     }
     &__list {
         &--margin-right {
             margin-right: 8px;
-        }
-        &--margin-top {
-            margin-top: 15px;
         }
     }
     &__btn {
@@ -25,7 +20,7 @@
         text-align: center;
         border-radius: 4px;
         border: 0;
-        padding: 6px 30px;
+        padding: 6px 22px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
@@ -38,32 +33,32 @@
 
 // TABLET
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
     .section-filter {
         padding-top: 60px;
         padding-bottom: 30px;
         max-width: 768px;
-        &__list {
-            margin-top: 0;
-        }
-        &__lists {
-            justify-content: center;
-        }
     }
 }
 
-// DESKTOP
+// MOBILE
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
     .section-filter {
-        max-width: 1200px;
-        padding-top: 94px;
-        padding-bottom: 50px;
+        max-width: 768px;
+        padding-bottom: 30px;
         &__lists {
+            flex-wrap: wrap;
+            justify-content: start;
             padding-left: 15px;
         }
+        &__list {
+            &--margin-top {
+                margin-top: 15px;
+            }
+        }
         &__btn {
-            padding: 6px 22px;
+            padding: 6px 30px;
         }
     }
 }

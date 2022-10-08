@@ -1,36 +1,25 @@
 .section-clients {
-    width: 480px;
     &__lists {
         padding: 0;
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;
     }
     &__list {
-        position: relative;
         border: 1px solid var(--color-social);
         height: 92px;
-        width: 210px;
+        width: 170px;
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        margin-bottom: 30px;
-            &--m-bottom,
-            &--m-bottom-last {
-                margin-bottom: 0;
-            }
         &:hover, &:focus-within {
             border: 1px solid var(--color-logo);
             cursor: pointer;
         }
     }
     &__icon {
-        position: relative;
         fill: var(--color-social);
         height: 70px;
         width: 120px;
         margin-left: 20px;
-        left: 15px;
-        top:2px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__list {
@@ -49,11 +38,16 @@
 
 // TABLET
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
     .section-clients {
         width: 768px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         &__title {
         margin-bottom: 30px;
+        }
+        &__lists {
+        flex-wrap: wrap;
         }
         &__list {
             width: 226px;
@@ -64,27 +58,26 @@
             }
         }
         &__icon {
+            position: relative;
             left: 23px;
         }
     }
 }
 
-// DESKTOP
+// MOBILE
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
     .section-clients {
-        padding-top: 94px;
-        padding-bottom: 94px;
-        width: 1200px;
-        &__lists {
-            flex-wrap: nowrap;
-        }
+        width: 480px;
         &__list {
-            width: 170px;
-            margin-bottom: 0;
+            width: 210px;
+            &--m-bottom-last {
+                margin-bottom: 30px;
+            }
         }
         &__icon {
-            left: 0;
+            position: relative;
+            left: 16px;
         }
     }
 }

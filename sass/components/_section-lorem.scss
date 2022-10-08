@@ -1,21 +1,24 @@
 .section-lorem {
     letter-spacing: 0.03em;
     font-size: 14px;
+    max-width: 480px;
     &__lists-icons {
         display: flex;
         justify-content: space-around;
         padding-left: 0;
+        flex-wrap: wrap;
     }
     &__icon {
         position: relative;
-        top: -2%
+        left: 20%;
+        top: -2%;
     }
     &__list-icons {
-        flex-basis: 270px;
+        flex-basis: 450px;
     }
     &__svg {
         height: 120px;
-        width: 270px;
+        width: 450px;
         background-color: var(--color-bg-icons);
         border-radius: 4px;
         margin-bottom: 30px;
@@ -26,29 +29,37 @@
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 10px;
+        text-align: center;
     }
     &__paragraph {
         line-height: 1.714;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 30px;
+        &--m-bottom {
+            margin-bottom: 0;
+        }
+                    
     }
 }
 
 // TABLET
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
     .section-lorem {
         max-width: 768px;
         padding-top: 60px;
         padding-bottom: 45px;
-        &__lists-icons {
-            flex-wrap: wrap;
+        &__list-icons {
+            flex-basis: 354px;
         }
         &__svg {
             width: 354px;
         }
         &__icon {
             left: 12%;
+        }
+        &__title {
+            text-align: left;
         }
         &__paragraph {
             margin-bottom: 30px;
@@ -60,27 +71,27 @@
     }
 }
 
-// MOBILE
+// DESKTOP
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
     .section-lorem {
-        max-width: 768px;
-        &__list-icons {
-            flex-basis: 450px;
-        }
+        max-width: 1200px;
+        padding-top: 94px;
+        padding-bottom: 94px;
         &__svg {
-            width: 450px;
+            width: 270px;
+        }
+        &__list-icons {
+            flex-basis: 270px;
         }
         &__icon {
-            left: 20%;
+            left: 0%;
         }
         &__title {
             text-align: center;
         }
         &__paragraph {
-            &--m-bottom-last {
-                margin-bottom: 30px;
-            }
+            margin-bottom: 0;
         }
     }
 }
