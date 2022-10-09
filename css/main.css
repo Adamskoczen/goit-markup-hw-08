@@ -728,7 +728,7 @@ img {
     background-image: linear-gradient(var(--color-header-gadient), var(--color-header-gadient)), url("../images/img-header.jpg");
   }
   .section-header .container {
-    max-width: 1600px;
+    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -755,21 +755,18 @@ img {
       flex-wrap: wrap;
 }
 .section-lorem__icon {
-  position: absolute;
-  left: 20%;
-  top: -2%;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  top: 25px;
 }
 .section-lorem__list-icons {
-  min-width: 290px;
-  max-width: 450px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .section-lorem__svg {
-  position: relative;
   height: 120px;
-  min-width: 290px;
-  max-width: 480px;
+  width: 100%;
   background-color: var(--color-bg-icons);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -805,9 +802,6 @@ img {
   .section-lorem__svg {
     width: 354px;
   }
-  .section-lorem__icon {
-    left: 12%;
-  }
   .section-lorem__title {
     text-align: left;
   }
@@ -830,12 +824,6 @@ img {
   .section-lorem__list-icons {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
-  }
-  .section-lorem__icon {
-    left: 0%;
-  }
-  .section-lorem__title {
-    text-align: center;
   }
   .section-lorem__paragraph {
     margin-bottom: 0;
@@ -902,6 +890,9 @@ img {
       flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section-team__list {
   background-color: var(--color-white);
@@ -918,6 +909,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 480px;
 }
 .section-team__icons {
   font-size: 0;
@@ -999,7 +991,7 @@ img {
   position: relative;
   border: 1px solid var(--color-social);
   height: 92px;
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1009,13 +1001,10 @@ img {
   cursor: pointer;
 }
 .section-clients__icon {
-  position: relative;
   fill: var(--color-social);
-  height: 70px;
-  width: 120px;
-  margin-left: 20px;
-  left: 15px;
-  top: 2px;
+  position: relative;
+  height: 92px;
+  width: 100%;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1029,7 +1018,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-clients {
-    min-width: 758px;
+    min-width: 768px;
     max-width: 1200px;
   }
   .section-clients__title {
@@ -1039,7 +1028,7 @@ img {
     width: 226px;
   }
   .section-clients__icon {
-    left: 23px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1057,7 +1046,7 @@ img {
     margin-bottom: 0;
   }
   .section-clients__icon {
-    left: 0;
+    width: 170px;
   }
 }
 .section-filter {
@@ -1153,6 +1142,7 @@ img {
 .section-grid__list {
   min-width: 290px;
   max-width: 450px;
+  min-height: 230px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1164,6 +1154,9 @@ img {
   cursor: pointer;
 }
 .section-grid__list:hover .section-grid__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1181,6 +1174,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1375,6 +1369,7 @@ img {
   border-radius: 4px;
   height: 50px;
   min-width: 290px;
+  max-width: 450px;
   padding-left: 16px;
   color: var(--color-contact-transp);
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1465,6 +1460,9 @@ img {
   .footer-info__list--margin-bottom {
     margin-bottom: 9px;
   }
+  .footer-info__list--margin-bottom-last {
+    margin-bottom: 0;
+  }
   .socials {
     width: auto;
     margin-left: 70px;
@@ -1486,13 +1484,10 @@ img {
     display: block;
   }
   .newsletter__input {
-    max-width: 358px;
+    width: 358px;
   }
   .newsletter__button {
     margin-left: 10px;
     margin-top: 1px;
-  }
-  .newsletter__list--margin-bottom-last {
-    margin-bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */
